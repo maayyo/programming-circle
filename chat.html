@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>チャット</title>
     <link rel="stylesheet" href="styles.css">
+    <script defer src="chat.js"></script>
 </head>
 <body>
     <header>
@@ -25,8 +26,13 @@
     <main>
         <section>
             <h2>チャット</h2>
-            <p>ここでは、メンバー同士でのリアルタイムなコミュニケーションができます。質問や相談、アイデアの共有などにご利用ください。</p>
-            <!-- チャット機能はJavaScriptやサードパーティのチャットサービスを利用して実装 -->
+            <div id="chat-box">
+                <div id="messages"></div>
+                <form id="chat-form">
+                    <input type="text" id="message-input" placeholder="メッセージを入力">
+                    <button type="submit">送信</button>
+                </form>
+            </div>
         </section>
     </main>
     <footer>
